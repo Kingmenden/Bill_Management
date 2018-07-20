@@ -15,5 +15,10 @@ pipeline {
         }
       }
     }
+    stage('Tomcat Deploy') {
+      steps {
+        sh 'mvn tomcat7: deploy'
+      }
+    }
   }
 }
