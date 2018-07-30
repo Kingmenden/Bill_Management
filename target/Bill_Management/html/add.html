@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
     <div class=wrapper>
@@ -43,107 +43,21 @@
         <form class="form-horizontal" role="form" action="ReimbursementApplication" method = "post">
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" id="username" name ="username" placeholder="username..." required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email..." required>
+                        <label for="company">Bill Company Name</label>
+                        <input type="text" class="form-control" id="company" name ="company" placeholder="Company..." required>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="dateofevent">Date of Event</label>
-                        <input type="date" class="form-control" id="dateofevent" name="dateofevent" placeholder="mm/dd/yyyy" required>
+                        <label for="permonth">Monthly Charge</label>
+                        <input type="number" class="form-control" id="permonth" name="permonth" placeholder="$100.00" required>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="dateofsubmission">Date of Submission</label>
-                        <input type="date" class="form-control" id="dateofsubmission" name="dateofsubmission" placeholder="mm/dd/yyyy" required>
+                        <label for="chargeType">Charge Type</label>
+                        <input type="text" class="form-control" id="chargeType" name="chargeType" placeholder="Auto Drawn..." required>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="cost">Cost for Event</label>
-                        <input type="text" class="form-control" id="cost" name="cost" placeholder="Cost..." required>
+                        <label for="billdate">Date of Bill</label>
+                        <input type="date" class="form-control" id="billdate" name="billdate" placeholder="mm/dd/yyyy" required>
                     </div>
-                    <div class="form-group col-md-3">
-                        <label for="gradingformat">Grading Format</label>
-                        <input type="text" class="form-control" id="gradingformat" name="gradingformat" placeholder="Format..." required>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="eventtype">Event Type</label>
-                        <input type="text" class="form-control" id="eventtype" name="eventtype" placeholder="Event Type..." required>
-                    </div>
-                </div>
-                <div class="form-group">
-                  <label for="address">Address</label>
-                  <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St..." required>
-                </div>
-                <div class="form-group">
-                  <label for="address2">Address 2</label>
-                  <input type="text" class="form-control" id="address2" name="address2" placeholder="Apartment, studio, or floor..." required>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="city">City</label>
-                    <input type="text" class="form-control" id="city" name="city" placeholder="City..." required>
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="state">State</label>
-                    <select id="state" name="state" class="form-control" required>
-                      <option selected>Choose...</option>
-                        <option>AL</option>
-                        <option>AK</option>
-                        <option>AZ</option>
-                        <option>AR</option>
-                        <option>CA</option>
-                        <option>CO</option>
-                        <option>CT</option>
-                        <option>DE</option>
-                        <option>FL</option>
-                        <option>GA</option>
-                        <option>HI</option>
-                        <option>ID</option>
-                        <option>IL</option>
-                        <option>IN</option>
-                        <option>IA</option>
-                        <option>KS</option>
-                        <option>KY</option>
-                        <option>LA</option>
-                        <option>ME</option>
-                        <option>MD</option>
-                        <option>MA</option>
-                        <option>MI</option>
-                        <option>MN</option>
-                        <option>MS</option>
-                        <option>MO</option>
-                        <option>MT</option>
-                        <option>NE</option>
-                        <option>NV</option>
-                        <option>NH</option>
-                        <option>NJ</option>
-                        <option>NM</option>
-                        <option>NY</option>
-                        <option>NC</option>
-                        <option>ND</option>
-                        <option>OH</option>
-                        <option>OK</option>
-                        <option>OR</option>
-                        <option>PA</option>
-                        <option>RI</option>
-                        <option>SC</option>
-                        <option>SD</option>
-                        <option>TN</option>
-                        <option>TX</option>
-                        <option>UT</option>
-                        <option>VT</option>
-                        <option>VA</option>
-                        <option>WA</option>
-                        <option>WV</option>
-                        <option>WI</option>
-                        <option>WY</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-2">
-                    <label for="zip">Zip</label>
-                    <input type="text" class="form-control" id="zip" placeholder="Zip..." required>
-                  </div>
                     <div class="form-group col-md-10">
                         <label for="description">Description</label>
                         <textarea class="form-control" rows="3" id="description" placeholder="Description..." ></textarea>
