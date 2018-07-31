@@ -321,25 +321,25 @@
 
 !function() {
   var data = [
-    { eventName: 'Lunch Meeting w/ Mark', calendar: 'Bill', color: 'orange' },
-    { eventName: 'Interview - Jr. Web Developer', calendar: 'Bill', color: 'orange' },
-    { eventName: 'Demo New App to the Board', calendar: 'Bill', color: 'orange' },
-    { eventName: 'Dinner w/ Marketing', calendar: 'Bill', color: 'orange' },
+    { eventName: 'Life Insurance Due', calendar: 'Insurance', color: 'orange' },
+    { eventName: 'Home Insurance Due', calendar: 'Insurance', color: 'orange' },
+    { eventName: 'Car Insurance Due', calendar: 'Insurance', color: 'orange' },
+    { eventName: 'Boat Insurance Due', calendar: 'Insurance', color: 'orange' },
 
-    { eventName: 'Game vs Portalnd', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs Houston', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs Denver', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs San Degio', calendar: 'Sports', color: 'blue' },
+    { eventName: 'Netflix Due', calendar: 'Streaming Service', color: 'blue' },
+    { eventName: 'Hulu Due', calendar: 'Streaming Service', color: 'blue' },
+    { eventName: 'Crunchy Roll Due', calendar: 'Streaming Service', color: 'blue' },
+    { eventName: 'HBO Due', calendar: 'Streaming Service', color: 'blue' },
 
-    { eventName: 'School Play', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Parent/Teacher Conference', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Pick up from Soccer Practice', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Ice Cream Night', calendar: 'Kids', color: 'yellow' },
+    { eventName: 'Electricity Due', calendar: 'Utilities', color: 'yellow' },
+    { eventName: 'Morgage Due', calendar: 'Utilities', color: 'yellow' },
+    { eventName: 'Water Due', calendar: 'Utilities', color: 'yellow' },
+    { eventName: 'Gas Due', calendar: 'Utilities', color: 'yellow' },
 
-    { eventName: 'Free Tamale Night', calendar: 'Other', color: 'green' },
-    { eventName: 'Bowling Team', calendar: 'Other', color: 'green' },
-    { eventName: 'Teach Kids to Code', calendar: 'Other', color: 'green' },
-    { eventName: 'Startup Weekend', calendar: 'Other', color: 'green' }
+    { eventName: 'Student Loan Due', calendar: 'Other', color: 'green' },
+    { eventName: 'Hospital Bill Due', calendar: 'Other', color: 'green' },
+    { eventName: 'Gym Membership Due', calendar: 'Other', color: 'green' },
+    { eventName: 'PlayStation Plus Due', calendar: 'Other', color: 'green' }
   ];
 
   

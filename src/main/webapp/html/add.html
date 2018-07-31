@@ -1,72 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Reimbursement Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
+    <link href="../css/form.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="add.html">New Bill</a>
+                    <span class="sr-only">(current)</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/webPages/html/Review.html">Application Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">LogOut</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
     <div class=wrapper>
-        <header>
+
+        <section id="hire">
             <h1>Bill Addition Page</h1>
-        </header>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="calendar.html">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="add.html">New Bill</a>
-                            <span class="sr-only">(current)</span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/webPages/static/employee-table/index.html">employee table</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/webPages/html/Review.html">Application Review</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html">LogOut</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <br>
-
-        <form class="form-horizontal" role="form" action="ReimbursementApplication" method = "post">
-                <div class="form-row">
-                    <div class="form-group col-md-3">
+        <form method = "post">
+                    <div class="field name-box">
+                        <input type="text" class="form-control" id="company" name ="company" placeholder="Company..." required/>
                         <label for="company">Bill Company Name</label>
-                        <input type="text" class="form-control" id="company" name ="company" placeholder="Company..." required>
+                        <span class="ss-icon">check</span>
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="field name-box">
+                        <input type="text" class="form-control" id="permonth" name="permonth" placeholder="$100.00" required/>
                         <label for="permonth">Monthly Charge</label>
-                        <input type="number" class="form-control" id="permonth" name="permonth" placeholder="$100.00" required>
+                        <span class="ss-icon">check</span>
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="field name-box">
+                        <input type="text" class="form-control" id="chargeType" name="chargeType" placeholder="Auto Drawn..." required/>
                         <label for="chargeType">Charge Type</label>
-                        <input type="text" class="form-control" id="chargeType" name="chargeType" placeholder="Auto Drawn..." required>
+                        <span class="ss-icon">check</span>
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="field name-box">
+                        <input type="text" class="form-control" id="billdate" name="billdate" placeholder="mm/dd/yyyy" required/>
                         <label for="billdate">Date of Bill</label>
-                        <input type="date" class="form-control" id="billdate" name="billdate" placeholder="mm/dd/yyyy" required>
+                        <span class="ss-icon">check</span>
                     </div>
-                    <div class="form-group col-md-12">
-                        <label for="description">Description</label>
-                        <textarea class="form-control" rows="3" id="description" placeholder="Description..." ></textarea>
-                    </div>
-                </div>
+            <div class="field msg-box">
+                <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+                <label for="msg">Msg</label>
+                <span class="ss-icon">check</span>
+            </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
-
+        </section>
     </div>
-    
+    <script  src="js/form.js"></script>
 </body>
 </html>
